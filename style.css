@@ -1,0 +1,54 @@
+header{
+    width: 100%;
+    height: 100px;
+    border: solid 1px red;
+}
+
+section{
+    width: 100%;
+    height: 400px;
+    border: solid 1px purple;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
+.bemVindo{
+    width: 100%;
+    height: 100px;
+    border: solid 1px purple;
+    display: flex;
+    font-size:30px;
+    color: rgb(150, 150, 150);
+    justify-content: center;
+    align-items: center;
+}
+
+.conteinersect{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.benef1{
+    width: 49%;
+    height: 70px;
+    border: solid 1px rgb(61, 232, 255);
+}
+
+.valor{
+    width: 49%;
+    height: 70px;
+    border: solid 1px rgb(209, 55, 140);
+
+}
+
+footer{
+    width: 100%;
+    height: 70px;
+    border: solid 1px salmon;
+}
