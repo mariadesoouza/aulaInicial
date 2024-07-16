@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body{
     background-image: url("img/gradiente.png");
 }
@@ -23,7 +28,7 @@ ul{
 
 section{
     width: 100%;
-    height: 730px;
+    height: 750px;
     display: flex;
     flex-direction: row;
     
@@ -43,7 +48,7 @@ section{
   
     justify-content: center;
     height: auto;
-    border: solid 1px white;    
+   
 }
 
 .home h2{
@@ -73,7 +78,7 @@ section{
     width: 20%;
     color: aliceblue;
     font-family:Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
+    text-align:center;
 }
 
 .imagem1{
@@ -83,16 +88,18 @@ section{
     justify-content: center;
 /*     background-color: #004aad; */
     padding: 20px;
-    margin-left: 10px;
+    margin-right: 10px;
 }
 
 footer{
     width: 100%;
-    height: 70px;
+    height: 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     background-color: #004aad;
+    position: absolute; 
+    bottom: 0;
 }
 
 .midias{
@@ -112,6 +119,9 @@ footer{
     margin-right: 15px;
     color: aliceblue;
     font-family:Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 footer img{
@@ -121,3 +131,154 @@ footer img{
 footer p{
     font-size: 19px;
 }
+
+
+
+/*Diferencias*/
+
+
+.diferencias{
+    display: flex;
+    justify-content:space-around;
+    width: 100%;
+    height: 80vh;
+    align-items: center;
+    background-image: url("img/gradiente.png");
+    box-sizing: border-box;
+}
+
+.beneficios{
+    width: 48%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.benTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.benTitle h2{
+    font-size: 44px;
+    color: #004aad;
+}
+
+.benTitle p{
+    font-size: 22px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.benText {
+    border: 3px black solid;
+
+    border-radius: 30px;
+    width: 70%;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: disc; 
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+
+/* benText*/
+.benText ul{
+    padding: 10px 50px;
+    border-radius: 30px;
+    width: 100%;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: disc; 
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+.planos{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+
+}
+
+.planosTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.planosTitle h2{
+    font-size: 44px;
+    color: #004aad;
+}
+
+.planosTitle p{
+    font-size: 22px;
+}
+
+
+/* PlanosText*/
+
+.planosText{
+   
+    border: 3px rgb(0, 0, 0) solid;
+    padding: 10px 50px;
+    border-radius: 30px;
+    width: 70%;
+    height: 330PX;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    list-style-type: disc; 
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+.planosText ul{
+   
+  
+    padding: 10px 50px;
+    border-radius: 30px;
+  
+    height: 330PX;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    list-style-type: disc; 
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+/*Area externa*/
+
+.area{
+    display: flex;
+
+}
+
