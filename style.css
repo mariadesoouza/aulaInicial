@@ -4,17 +4,42 @@
 }
 
 body{
+
+    /*display: flex; /* Adicionado display: flex para usar flexbox 
+    flex-direction: column; /* Organizar o conteúdo em uma coluna 
+    min-height: 100vh; /* Garantir que o corpo ocupe pelo menos a altura da janela 
+    font-family: 'Arial', sans-serif;
+    background-image: url("img/gradiente.png"); */
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     background-image: url("img/gradiente.png");
+    background-repeat: no-repeat; /* Impede a repetição da imagem de fundo */
+    background-position: right center; /* Coloca a imagem no meio verticalmente e à direita */
+    background-size: auto; /* Define o tamanho da imagem de acordo com seu tamanho original */
+    font-family: 'Arial', sans-serif;
+
 }
+
 header{
     width: 100%;
-    font-size: 20px;
+    font-size: 23px;
     color: black;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 nav{
     width: 100%;
+}
+
+.teste{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+a:hover{
+    color:#004aad;
 }
 
 ul{
@@ -24,11 +49,16 @@ ul{
     align-items: center;
     height: 91px;
     list-style-type: none;
+
 }
+
+a { 
+    color: inherit; 
+} 
 
 section{
     width: 100%;
-    height: 750px;
+    height: 774px;
     display: flex;
     flex-direction: row;
     
@@ -42,12 +72,12 @@ section{
 
 .home{
 
-    width: 49%;
+    width: 63%;
     display: flex;
     flex-direction: column;
-  
     justify-content: center;
     height: auto;
+    
    
 }
 
@@ -55,34 +85,44 @@ section{
     font-size: 35px;
     font-family:Georgia, 'Times New Roman', Times, serif;
     padding: 10px;
-    margin-left: 20px;
+    margin-left: 50px;
 }
 
 .home h3{
     font-size: 30px;
     font-family:Georgia, 'Times New Roman', Times, serif;
     padding: 10px;
-    margin-left: 20px;
+    margin-left: 50px;
     color: #004aad;
 }
 
+.home h3,
+.home p {
+    margin-bottom: 35px; /* Espaçamento entre h3 e p */
+}
+
+.home p.saibaMais {
+    margin-top: 50px; /* Espaçamento acima do p com classe .saibaMais */
+}
+
 .home p{
-    font-size: 20px;
-    padding: 10px;
-    margin-left: 20px;
+    font-size: 25px;
+    padding: 25px;
+    margin-left: 50px;
 }
 
 .saibaMais{
     background-color: #004aad;
     border-radius: 30px;
-    width: 20%;
+    width: 25%;
     color: aliceblue;
     font-family:Georgia, 'Times New Roman', Times, serif;
     text-align:center;
+    cursor: pointer;
 }
 
 .imagem1{
-    width: 49%;
+    width: 37%;
     display: flex;
     height: auto;
     justify-content: center;
@@ -98,8 +138,10 @@ footer{
     flex-direction: row;
     justify-content: space-between;
     background-color: #004aad;
-    position: absolute; 
-    bottom: 0;
+    /*position: absolute;
+    bottom: 0;*/
+    align-items: center; /* Para centralizar verticalmente os itens no rodapé */
+    padding: 0 15px;
 }
 
 .midias{
@@ -108,6 +150,11 @@ footer{
     align-items: center;
     margin-left: 15px;
 }
+
+.midias img {
+    margin: 0 5px; /* Adicionado margin para espaçamento entre ícones */
+}
+
 
 .rede{
     color: aliceblue;
@@ -168,20 +215,13 @@ footer p{
     color: #004aad;
 }
 
+.benTitle h2, p{
+    margin-bottom: 30px;
+}
+
 .benTitle p{
     font-size: 22px;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 .benText {
     border: 3px black solid;
@@ -236,6 +276,10 @@ footer p{
     color: #004aad;
 }
 
+.planosTitle h2, p{
+    margin-bottom: 30px;
+}
+
 .planosTitle p{
     font-size: 22px;
 }
@@ -277,8 +321,158 @@ footer p{
 
 /*Area externa*/
 
-.area{
+
+section.area {
     display: flex;
+    flex-direction:column;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    flex: 1;
+    height: 700px;
+}
+
+.areaExterna{
+    /*display: flex;
+    align-items: center;
+    text-align: center;*/
+    width: 100%;
+    max-width: 1670px;
+    display: flex;
+    flex-direction: column; 
+    margin-top: 20px;
+    gap: 5%;
+}
+
+.areaExterna h3{
+    color: #004aad;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    width: 48%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
 }
 
+.item img {
+    width: 45%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.item p{
+    margin-left: 20px;
+}
+
+
+.contato {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.informacoes {
+    width: 45%;
+}
+
+.informacoes h3 {
+    font-size: 25px;
+    color: #004aad;
+    margin-top: -254px;
+
+}
+
+.informacoes ul {
+
+    margin-top: 70px;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    align-items:start;
+    list-style-type: disc;
+    margin-left: 20px;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.formulario {
+    width: 45%;
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.formulario h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    color: #004aad;
+}
+
+.formulario label {
+    font-size: 20px;
+    color: #004aad;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.formulario input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #004aad;
+    border-radius: 10px;
+    background: linear-gradient(to right, #004aad, #00aaff);
+    color: white;
+    font-size: 18px;
+}
+
+.formulario .planos-box {
+    background: white;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.formulario .planos-box ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.formulario button {
+    background-color: #004aad;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.envio{
+    position: relative;
+    left: 45%;
+}
+
+.espaco{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 600px;
+    margin-top: 40px;
+}
